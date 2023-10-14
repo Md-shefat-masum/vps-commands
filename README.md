@@ -58,8 +58,8 @@ deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] ht
 sudo apt update
 sudo apt install mongodb-org -y
 mongod --version
-sudo systemctl status mongod
 sudo systemctl start mongod
+sudo systemctl status mongod
 
 ```
 
