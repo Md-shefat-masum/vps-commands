@@ -35,6 +35,18 @@ git version
 
 ```
 
+# mySQL install
+```
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl start mysql.service
+```
+
+# mySQL setup
+```
+sudo mysql
+```
+
 # permission to all file
 
 ```
