@@ -93,6 +93,11 @@ sudo systemctl restart mongod
 sudo systemctl status mongod
 mongosh
 ```
+## log as auth user
+```
+mongosh -u root -p --authenticationDatabase admin
+m2451238228
+```
 
 
 # permission to all file
