@@ -9,6 +9,19 @@ sudo adduser xrdp ssl-cert
 
 ```
 
+# apache install
+
+```
+sudo apt update
+sudo apt install apache2
+```
+
+# permission to all file
+
+```
+sudo chmod -R 777 /var/DirectoryName
+```
+
 # Aftar boot / reboot, restart services
 
 ``` 
