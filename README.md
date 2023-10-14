@@ -45,6 +45,8 @@ sudo systemctl start mysql.service
 # mySQL setup
 ```
 sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'dbMa$%!@#*@95ext965874-+/';
+exit
 ```
 
 # permission to all file
