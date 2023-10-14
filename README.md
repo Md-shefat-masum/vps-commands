@@ -1,5 +1,14 @@
 # vps-commands
 
+# ui install
+```
+sudo apt update && sudo apt upgrade
+sudo apt install kde-plasma-desktop
+sudo apt install xrdp
+sudo adduser xrdp ssl-cert
+
+```
+
 # Aftar boot / reboot, restart services
 
 ``` 
