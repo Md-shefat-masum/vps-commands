@@ -98,7 +98,9 @@ mongosh
 mongosh -u root -p --authenticationDatabase admin
 m2451238228
 ```
-
+```
+show dbs
+```
 
 # permission to all file
 
