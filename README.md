@@ -27,7 +27,7 @@ nvm install v20.8.1
 
 ```
 
-# install git
+# git install
 ```
 sudo apt-get update
 sudo apt-get install git-all
