@@ -16,6 +16,16 @@ sudo apt update
 sudo apt install apache2
 ```
 
+# node js install with nvm
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm list-remote
+nvm install v20.8.1
+
+```
+
 # permission to all file
 
 ```
