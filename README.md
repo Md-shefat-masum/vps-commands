@@ -59,9 +59,41 @@ sudo apt update
 sudo apt install mongodb-org -y
 mongod --version
 sudo systemctl start mongod
-sudo systemctl status mongod
+sudo systemctl enable mongod
 
 ```
+
+# mongo status 
+```
+sudo systemctl status mongod
+```
+
+#run mongo and secure 
+```
+mongosh
+use admin
+db.createUser(
+  {
+    user: "root",
+    pwd: "m2451238228",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+ }
+)
+exit
+```
+```
+sudo nano /etc/mongod.conf
+```
+```
+security:
+    authorization: enabled
+```
+```
+sudo systemctl restart mongod
+sudo systemctl status mongod
+mongosh
+```
+
 
 # permission to all file
 
