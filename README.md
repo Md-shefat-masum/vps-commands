@@ -163,7 +163,7 @@ sudo /etc/init.d/apache2 restart
 
 ``` 
   sudo service apache2 start
-  sudo systemctl start mysqld
+  sudo systemctl start mysql.service
   sudo systemctl enable mongod
   sudo systemctl restart mongod
 ```
