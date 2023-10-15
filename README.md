@@ -16,6 +16,22 @@ sudo apt-get update
 sudo apt install apache2
 ```
 
+# php install 
+```
+sudo apt update
+sudo apt install -y lsb-release gnupg2 ca-certificates apt-transport-https software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+
+sudo apt install php8.2
+sudo apt install php8.2-fpm
+sudo apt install php8.2-{bcmath,fpm,xml,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi}
+
+sudo apt install apache2 libapache2-mod-php8.2
+sudo a2enmod php8.2
+sudo systemctl restart apache2
+```
+
 # node js install with nvm
 ```
 sudo apt-get update
