@@ -167,4 +167,8 @@ sudo /etc/init.d/apache2 restart
   sudo systemctl enable mongod
   sudo systemctl restart mongod
 ```
-
+#open servers
+```
+cd /var/www/deepseahost.com
+pm2 start 5001_deep_sea_host.js --watch
+```
