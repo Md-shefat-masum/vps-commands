@@ -114,7 +114,7 @@ sudo apt install netcat
 nc -zv mongodb_server_ip 27017
 mongosh "mongodb://username@mongo_server_ip:27017"
 ```
-## mongo error 41 
+## mongo error 14
 ```
 sudo chown -R mongodb:mongodb /var/lib/mongodb
 sudo chown mongodb:mongodb /tmp/mongodb-27017.sock
