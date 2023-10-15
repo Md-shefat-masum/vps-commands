@@ -49,6 +49,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'dbMa$%!@
 exit
 ```
 
+
+
 # mongo DB install
 ```
 sudo apt install software-properties-common gnupg apt-transport-https ca-certificates -y
@@ -121,11 +123,24 @@ sudo chown mongodb:mongodb /tmp/mongodb-27017.sock
 sudo service mongod restart
 sudo systemctl status mongod
 ```
+## mongodb shell
+```
+sudo apt update
+wget https://downloads.mongodb.com/compass/mongodb-compass_1.39.0_amd64.deb
+sudo apt install ./mongodb-compass_1.39.0_amd64.deb
+mongodg-compass --no-sandbox
+```
 
 # permission to all file
 
 ```
 sudo chmod -R 777 /var/DirectoryName
+```
+
+# proxy install
+```
+sudo a2enmod proxy
+sudo /etc/init.d/apache2 restart
 ```
 
 # Aftar boot / reboot, restart services
