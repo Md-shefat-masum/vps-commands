@@ -101,6 +101,26 @@ m2451238228
 ```
 show dbs
 ```
+## mongo remote connect
+```
+bindIp: 127.0.0.1, vps-mongo-server-ip
+sudo systemctl restart mongod
+sudo ufw allow from remote_machine_ip to any port 27017
+sudo ufw reload
+```
+## mongo remote shell
+```
+sudo apt install netcat
+nc -zv mongodb_server_ip 27017
+mongosh "mongodb://username@mongo_server_ip:27017"
+```
+## mongo error 41 
+```
+sudo chown -R mongodb:mongodb /var/lib/mongodb
+sudo chown mongodb:mongodb /tmp/mongodb-27017.sock
+sudo service mongod restart
+sudo systemctl status mongod
+```
 
 # permission to all file
 
