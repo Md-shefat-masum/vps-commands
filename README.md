@@ -159,6 +159,11 @@ sudo apt install ./mongodb-compass_1.39.0_amd64.deb
 mongodg-compass --no-sandbox
 ```
 
+## mongo backup
+```
+mongodump --uri="mongodb://root:m2451238228@103.191.241.251:27017/blogDB?authSource=admin" --db=blogDB --out=d:/db_users.json
+```
+
 # permission to all file
 
 ```
@@ -184,3 +189,5 @@ sudo /etc/init.d/apache2 restart
 cd /var/www/deepseahost.com
 pm2 start 5001_deep_sea_host.js --watch
 ```
+
+
