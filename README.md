@@ -159,9 +159,11 @@ sudo apt install ./mongodb-compass_1.39.0_amd64.deb
 mongodg-compass --no-sandbox
 ```
 
-## mongo backup
+## mongo backup and restore
+install https://www.mongodb.com/try/download/database-tools
 ```
-mongodump --uri="mongodb://root:m2451238228@103.191.241.251:27017/blogDB?authSource=admin" --db=blogDB --out=d:/db_users.json
+mongodump --uri="uri_link?authSource=admin" --db=blogDB --out=d:/folder_name
+mongorestore -d meal-management-system D:\db.json\blogDB
 ```
 
 # permission to all file
