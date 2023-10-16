@@ -166,13 +166,17 @@ mongodump --uri="uri_link?authSource=admin" --db=blogDB --out=d:/folder_name
 mongorestore -d meal-management-system D:\db.json\blogDB
 ```
 
-# permission to all file
+# permission to laravel project diretories
 
 ```
 sudo chmod -R 777 /var/DirectoryName
 ```
 ```
 sudo chown -R www-data:www-data
+```
+```
+sudo chown -R www-data:www-data /var/www/html/laravel/storage
+sudo chown -R www-data:www-data /var/www/html/laravel/bootstrap/cache
 ```
 
 # proxy install
