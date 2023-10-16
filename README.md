@@ -171,6 +171,9 @@ mongorestore -d meal-management-system D:\db.json\blogDB
 ```
 sudo chmod -R 777 /var/DirectoryName
 ```
+```
+sudo chown -R www-data:www-data
+```
 
 # proxy install
 ```
