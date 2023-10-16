@@ -185,6 +185,7 @@ sudo /etc/init.d/apache2 restart
 
 ``` 
   sudo service apache2 start
+  sudo systemctl restart apache2
   sudo systemctl start mysql.service
   sudo systemctl enable mongod
   sudo systemctl restart mongod
@@ -193,6 +194,32 @@ sudo /etc/init.d/apache2 restart
 ```
 cd /var/www/deepseahost.com
 pm2 start 5001_deep_sea_host.js --watch
+```
+
+# apache server setup
+php
+```
+<VirtualHost *:80>
+     ServerName domain
+     DocumentRoot /var/www/domain/public
+  
+     <Directory /var/www/domain/public>
+    		Options Indexes FollowSymLinks
+    		AllowOverride All
+    		Require all granted
+     </Directory>
+     ErrorLog ${APACHE_LOG_DIR}/error.log
+     CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+proxy
+```
+ <VirtualHost *:80>
+  	ServerName domain
+  	ProxyPreserveHost on
+  	ProxyPass / http://localhost:5001/
+  	ProxyPassReverse / http://localhost:5001/
+</VirtualHost>
 ```
 
 
