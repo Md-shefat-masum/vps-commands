@@ -1,13 +1,3 @@
-<table>
-  <tr>
-      <td>
-          left
-      </td>
-      <td>
-            right
-      </td>
-  </tr>
-</table>
 # vps-commands
 
 # ui install
