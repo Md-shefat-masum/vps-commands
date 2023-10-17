@@ -1,8 +1,8 @@
-<div style="display:flex;">
-  <div>
+<div>
+  <div style="float:left">
     left
   </div>
-  <div>
+  <div style="float:left">
     right
   </div>
 </div>
