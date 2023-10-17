@@ -1,3 +1,11 @@
+<div style="display:flex;">
+  <div>
+    left
+  </div>
+  <div>
+    right
+  </div>
+</div>
 # vps-commands
 
 # ui install
