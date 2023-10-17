@@ -77,6 +77,24 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'dbMa$%!@
 exit
 ```
 
+# remote connection
+```
+SELECT host, user FROM mysql.user;
+CREATE USER 'username'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' WITH GRANT OPTION;
+```
+```
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+```
+bind-address            = 0.0.0.0
+```
+```
+sudo systemctl restart mysql
+```
+```
+CREATE USER 'sammy'@'remote_server_ip' IDENTIFIED BY 'password';
+```
 
 
 # mongo DB install
@@ -230,5 +248,6 @@ proxy
 ```
 netstat --listen --tcp -n
 ```
+
 
 
