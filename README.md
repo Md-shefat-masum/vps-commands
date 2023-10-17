@@ -226,4 +226,9 @@ proxy
 </VirtualHost>
 ```
 
+# check opened ports
+```
+netstat --listen --tcp -n
+```
+
 
