@@ -1,11 +1,13 @@
-<div>
-  <div style="float:left">
-    left
-  </div>
-  <div style="float:left">
-    right
-  </div>
-</div>
+<table>
+  <tr>
+      <td>
+          left
+      </td>
+      <td>
+            right
+      </td>
+  </tr>
+</table>
 # vps-commands
 
 # ui install
