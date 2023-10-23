@@ -217,6 +217,9 @@ sudo /etc/init.d/apache2 restart
 cd /var/www/deepseahost.com
 pm2 start 5001_deep_sea_host.js --watch
 ```
+```
+pm2 start npm --name next.techparkit.org -- run start -- -p 3001
+```
 
 # apache server setup
 php
