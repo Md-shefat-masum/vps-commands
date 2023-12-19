@@ -200,6 +200,7 @@ sudo chown -R www-data:www-data /var/www/html/laravel/bootstrap/cache
 # proxy install
 ```
 sudo a2enmod proxy
+sudo a2enmod proxy_http
 sudo /etc/init.d/apache2 restart
 ```
 
