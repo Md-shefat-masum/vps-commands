@@ -182,6 +182,9 @@ install https://www.mongodb.com/try/download/database-tools
 ```
 mongodump --uri="uri_link?authSource=admin" --db=blogDB --out=d:/folder_name
 mongorestore -d meal-management-system D:\db.json\blogDB
+
+mongorestore --db it_database --verbose G:/it_database_18_oct_23_12_8p/it_database
+mongodump --uri="mongodb+srv://user:pass@cluster0.0fsdqn6.mongodb.net/?authSource=admin" --db=it_database --out=G:/it_databse
 ```
 
 # permission to laravel project diretories
