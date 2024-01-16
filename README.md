@@ -186,6 +186,10 @@ mongorestore -d meal-management-system D:\db.json\blogDB
 mongorestore --db it_database --verbose G:/it_database_18_oct_23_12_8p/it_database
 mongodump --uri="mongodb+srv://user:pass@cluster0.0fsdqn6.mongodb.net/?authSource=admin" --db=it_database --out=G:/it_databse
 ```
+restore local to atla
+```
+mongorestore --uri mongodb+srv://username:pass@noortahervpstpit.pfgs6qb.mongodb.net -d DBname --verbose ./backup_dir
+```
 
 # permission to laravel project diretories
 
