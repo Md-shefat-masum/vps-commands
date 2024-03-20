@@ -213,7 +213,8 @@ sudo /etc/init.d/apache2 restart
 
 # Aftar boot / reboot, restart services
 
-``` 
+```
+  sudo a2enmod rewrite
   sudo service apache2 start
   sudo systemctl restart apache2
   sudo systemctl start mysql.service
