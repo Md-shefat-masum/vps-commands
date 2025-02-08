@@ -392,3 +392,12 @@ You can track your action from Github Actions Tab
 If you get any File Permission error in the action then you have to change file permission accordingly.
 All Done
 
+### aapanel
+```
+apt install cmake libc-ares2 libc-ares-dev
+```
+```
+
+URL=https://www.aapanel.com/script/install_7.0_en.sh && if [ -f /usr/bin/curl ];then curl -ksSO "$URL" ;else wget --no-check-certificate -O install_7.0_en.sh "$URL";fi;bash install_7.0_en.sh aapanel
+```
+
