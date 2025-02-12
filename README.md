@@ -77,7 +77,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'dbMa$%!@
 exit
 ```
 
-#mySQL restore database
+# mySQL restore database
 ```
 mysql -u root -p db_name < ./file_name.sql
 
